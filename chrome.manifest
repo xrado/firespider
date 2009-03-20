@@ -1,0 +1,2 @@
+content firespider chrome/content/firespider/ xpcnativewrappers=no
+overlay chrome://firebug/content/firebugOverlay.xul         chrome://firespider/content/firespider.xul

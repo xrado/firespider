@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script src="chrome://firespider/content/firespider.js" type="application/x-javascript"/>
+	<script src="chrome://firespider/content/php.js" type="application/x-javascript"/>
+	<script src="chrome://firespider/content/parseurl.js" type="application/x-javascript"/>
+
+	<commandset id="mainCommandSet">
+		<command id="cmd_Start" oncommand="Firebug.FireSpiderModel.onStart(FirebugContext)"/>
+		<command id="cmd_Stop" oncommand="Firebug.FireSpiderModel.onStop(FirebugContext)"/>
+		<command id="cmd_Clear" oncommand="Firebug.FireSpiderModel.onClear(FirebugContext)"/>
+	</commandset>
+
+	<toolbar id="fbToolbar" align="center">
+		<hbox id="fbToolbarInner" insertbefore="fbDetachButton" flex="1" align="center">
+			<hbox id="fbFireSpiderButtons" insertafter="fbNetButtons">
+				<toolbarseparator/>
+				<toolbarbutton id="button_Start" label="Start" class="toolbar-text-button" tooltiptext="Start the spider" command="cmd_Start"/>
+				<toolbarbutton id="button_Stop" label="Stop" class="toolbar-text-button" tooltiptext="Stop the spider" command="cmd_Stop"/>
+				<toolbarbutton id="button_Clear" label="Clear" class="toolbar-text-button" tooltiptext="Clear console" command="cmd_Clear"/>
+			</hbox>
+		</hbox>
+	</toolbar>
+</overlay>
+
+
+

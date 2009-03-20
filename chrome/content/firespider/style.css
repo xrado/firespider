@@ -1,0 +1,34 @@
+.spiderRequest {
+	overflow:hidden;
+	border-bottom: 1px solid #EFEFEF;
+	font-weight:bold;
+	padding:2px;
+	margin-left:5px;
+}
+
+.spiderRequest img {
+	margin: 0px 0px 1px 5px;
+	visibility: hidden;
+}
+
+.spiderData {
+	overflow:hidden;
+	border-bottom: 1px solid #EFEFEF;
+	padding:2px;
+}
+
+.spiderData:hover {
+	background: #FFF8AF;
+}
+
+.spiderData img { margin: 0px 0px 1px 5px; }
+
+.spiderUrl { margin-left:5px; font-weight:bold; cursor:pointer; }
+.spiderError { margin-left:5px; color:red; }
+.spiderTimer { margin-left:5px; color: #9F9F9F; font-size:9px; float:right; }
+.spiderTitle { margin-left:5px; }
+.spiderDataMore { margin-left:15px; padding:1px; font-size:11px;  }
+.spiderFrom { margin-left:5px; color:gray; }
+.spiderFromWhere { margin-left:5px; cursor:pointer; }
+.spiderLink { margin-left:5px; margin-right:5px; color:gray; }
+.spiderFromLink { margin-left:5px; }
